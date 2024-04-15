@@ -3,6 +3,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 project(BetterProgression VERSION 1.0.0)
 
@@ -19,7 +20,6 @@ add_library(${PROJECT_NAME} SHARED
     src/LevelUpPopup.cpp
     src/ParticleManager.hpp
     src/MenuLayer.cpp
-    # Add your cpp files here
 )
 
 if (NOT DEFINED ENV{GEODE_SDK})
